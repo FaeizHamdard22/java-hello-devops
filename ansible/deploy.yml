@@ -1,0 +1,17 @@
+---
+- name: Deploy Docker container
+  hosts: all
+  become: true
+  tasks:
+    - name: Pull image from DockerHub
+      docker_image:
+        name: faeizanaba/java-hello
+        source: pull
+
+    - name: Run container
+      docker_container:
+        name: java-app
+        image: faeizanaba/java-hello
+        state: started
+        ports:
+          - "8080:8080"
