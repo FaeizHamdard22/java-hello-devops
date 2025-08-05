@@ -1,4 +1,3 @@
-```markdown
 # Java Hello DevOps Project
 
 This project demonstrates a simple Java application built and deployed using modern DevOps tools and practices, including Jenkins, Ansible, AWS, Git, and Docker Hub.
