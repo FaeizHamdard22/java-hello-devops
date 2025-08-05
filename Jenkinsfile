@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKERHUB_CREDENTIALS = credentials('dockerhub-creds')
+        DOCKERHUB_CREDENTIALS = credentials('dockerhub-credentials')
         DOCKER_IMAGE = "faeizanaba/java-hello:latest"
         GIT_BRANCH = "faeiz"
         GIT_REPO = "https://github.com/FaeizHamdard22/java-hello-devops.git"
