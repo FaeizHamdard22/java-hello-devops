@@ -1,2 +1,2 @@
-[ec2server]
-127.0.0.1 ansible_connection=local
+[app]
+13.203.194.133 ansible_user=ubuntu ansible_ssh_private_key_file=/home/ubuntu/faeeiz.pem
